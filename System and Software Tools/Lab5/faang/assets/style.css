@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Manrope'; /*a name to be used later*/
+    src: url('../fonts/Manrope-ExtraBold.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'Manrope-Var'; /*a name to be used later*/
+    src: url('../fonts/Manrope-Light.otf'); /*URL to font*/
+}
+
+body {
+    width: 50%;
+    margin: auto;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope';
+    font-size: 40pt;
+    text-align: center;
+    margin-top: 75px;
+    color: #363C74;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Manrope-Var';
+    font-size: 27pt;
+}
+
+li {
+    margin: 5px;
+}
+
+.tab {
+    font-family: 'Manrope-var';
+    font-size: 15pt;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.company {
+    font-family: 'Manrope';
+    font-size: 40pt;
+    padding-right: 20px;
+}
+
+.slogan {
+    font-family: 'Manrope-Var';
+    font-size: 27pt;
+    color: #E8D3A2;
+}
+
+.entry {
+    font-family: 'Manrope';
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+}
+
+.entry:hover {
+    color: #E8D3A2;
+    text-decoration: none;
+}
+
+.entry:visited {
+    color: #363C74;
+    text-decoration: none;
+}
+
+.entry:visited:hover {
+    color: #E8D3A2;
+    text-decoration: none;
+}
+
+.about {
+    font-family: 'Manrope';
+    font-size: 15pt;
+    margin; 5px
+    color: black;
+    text-decoration: none;
+    line-height: 1em;
+}
+
+.wrap {
+   margin:0 auto;
+}
+
+.left_col {
+   float:left;
+   width: 50%;
+}
+
+.right_col {
+   float:right;
+   width: 50%;
+}
+
+

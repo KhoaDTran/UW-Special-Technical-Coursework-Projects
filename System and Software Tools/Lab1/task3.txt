@@ -1,0 +1,10 @@
+# Write your answers to task3 below.
+# Do NOT remove or modify the question numbers.
+# Each answer should be kept on a single line.
+
+1.emacs
+2.emacs animals.txt
+3.Control n to move down or down button
+4.Control p to move up or up button
+5.Control x and Control s
+6.Control x and Control c

@@ -1,0 +1,45 @@
+{
+  "name": "problem-set-06",
+  "version": "0.1.20.1",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fetch-mock": "^7.7.3",
+    "jest-style-matchers": "^0.1.1",
+    "jquery": "^3.5.1",
+    "md5": "^2.3.0",
+    "node-fetch": "^2.6.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6
+    },
+    "env": {
+      "browser": true,
+      "node": true,
+      "shared-node-browser": true,
+      "jquery": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+      "no-console": "off",
+      "semi": [
+        "off",
+        "always",
+        {
+          "omitLastInOneLineBlock": true
+        }
+      ],
+      "camelcase": [
+        "error"
+      ]
+    }
+  },
+  "dependencies": {}
+}

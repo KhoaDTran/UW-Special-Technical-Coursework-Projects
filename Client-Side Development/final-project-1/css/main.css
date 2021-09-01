@@ -1,0 +1,371 @@
+/* Formatting overall html elements and header */
+html {
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	text-align: center;
+}
+
+div > h1 {
+  font-size: 50px;
+  color: #006400;
+}
+
+/* All img css relating to size and formatting */
+img {
+  width: 300px;
+  height: 300px;
+}
+
+img.main_logo {
+  width: 130px;
+  height: 130px;
+}
+
+img.logo {
+  width: 400px;
+  height: 300px;
+  display: inline;
+}
+
+body {
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #555753;
+	margin: 0;
+	padding: 0;
+}
+
+.TextWrapLeft {
+	float:left;
+	margin: 10px;
+}
+
+.TextWrap {
+	height: 400px;
+	width: 400px;
+}
+
+/* General css constraints for all elements */
+
+p {
+	margin-top: 0;
+  text-align: justify;
+  font-size: 1.3em;
+}
+
+h2 {
+	font: italic normal 2em georgia, sans-serif;
+	letter-spacing: 1px;
+	color: #006400;
+	padding-bottom: 0.5%;
+}
+
+div.intro {
+  background-color: #90EE90;
+  padding:2%;
+  padding-left: 8%;
+  display: flex;
+}
+
+div.form {
+	background-color: #8FBC8F;
+  padding:2%;
+	padding-left: 8%;
+	display: flex;
+}
+
+/* Image specific css constraints */
+.earthLogo {
+	background-color: #8FBC8F;
+  padding:2%;
+	padding-left: 16%;
+	float: left;
+}
+
+.earthImg {
+	height: 400px;
+	width: 400px;
+}
+
+.purposeImage {
+	float: left;
+	width: 20%;
+	padding: 2%;
+}
+
+.truckImg {
+	height: 400px;
+	width: 600px;
+}
+
+.wasteImg {
+	height: 400px;
+	width: 600px;
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.filter {
+	font-size: 1.4rem;
+	color: black;
+	font-weight: bold;
+}
+
+/* All css for the top navigation bar and links to other html pages*/
+.topnav {
+  overflow: hidden;
+  background-color: #d3d3d3;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav > img {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+}
+
+.topnav a.title {
+  color: #006400;
+}
+
+.purposeTitle, .generatedTitle, .findTitle {
+	padding-bottom: 2%;
+}
+
+.purposeText {
+	font-size: 1.5rem;
+	color: black;
+	font-weight: bold;
+}
+
+.purposeContent {
+	padding-top: 4%;
+	width: 70%
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: 006400;
+}
+
+.topnav a.active {
+  background-color: #006400;
+  color: white;
+}
+
+/* CSS to keep our table and graph hidden*/
+#hidden_graph, #hidden_table {
+	display: none;
+	width:100%
+}
+/* All required graph and table css to format correctly*/
+div.graph, div.tableContent {
+	background-color: #72e2ca;
+	height: auto;
+	width: 100%;
+	display: flex;
+	font-size: 1.5rem;
+}
+
+div.choose {
+	font-size: 1.5rem;
+	color: black;
+}
+
+div.choose, div.graph, div.tableContent {
+	background-color: #72e2ca;
+	padding:2%;
+	padding-left: 8%;
+	color: black;
+}
+
+div.tableContent {
+	height: auto;
+	width: 100%;
+	display: flex;
+	padding-bottom: 11%;
+}
+
+div.tableDiv {
+	width: 25%;
+	margin-bottom: 5%;
+}
+
+#displayinfo {
+	padding: 2%;
+}
+
+#chartContainer {
+	height: 370px;
+	width: 40%;
+	float:left;
+	margin-top: 1%;
+	margin-right: 5%;
+}
+
+/* CSS specific to the paragraphs and images around */
+p.chartP, p.graphP {
+	color: black;
+	border: 5px solid white;
+}
+
+p.chartP {
+	width: 60%;
+	float:left;
+	padding: 2%;
+}
+
+p.graphP {
+	float:left;
+	width:50%;
+	font-size: 1.5rem;
+	padding: 2%;
+}
+
+.table {
+	width: 30%;
+	float: left;
+	margin-left: 5%;
+	height: auto;
+}
+
+/* All footer css to keep is constrained */
+footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+  color: black;
+  text-align: center;
+  padding-top: 0.75%;
+}
+
+footer > p {
+  text-align: center;
+}
+
+footer > address {
+  font-size: 1.3em;
+}
+
+div.placeholder {
+  display: none;
+  font-size: 5rem;
+}
+
+.intro {
+	min-width: 470px;
+	width: 100%;
+}
+
+/* Media CSS for a min width of 598px */
+@media (min-width: 598px) {
+ html {
+	 height: 100%;
+ }
+
+ footer {
+	display: block;
+	bottom: 0;
+	right: 0;
+ }
+
+ nav > a {
+	 font-size: 1rem;
+ }
+
+ h1 {
+	 font-size: 3rem;
+ }
+
+ h2 {
+	 font-size: 1rem;
+ }
+}
+
+/* Media CSS for a min width of 768px */
+@media (min-width: 768px) {
+ html {
+	 height: 100%;
+ }
+
+ footer {
+	 display: block;
+	 bottom: 0;
+	 right: 0;
+ }
+
+ nav > a {
+	 font-size: 1.2rem;
+ }
+
+ h1 {
+	 font-size: 4rem;
+ }
+
+ h2 {
+	 font-size: 2rem;
+ }
+}
+
+/* Media CSS for a min width of 992px */
+@media (min-width: 992px) {
+ html {
+	 height: 100%;
+ }
+
+ footer {
+	 display: block;
+	 bottom: 0;
+	 right: 0;
+ }
+
+ nav > a {
+	 font-size: 1.5rem;
+ }
+
+ h1 {
+	 font-size: 5rem;
+ }
+
+ h2 {
+	 font-size: 3rem;
+ }
+}
+
+/* Media CSS for a min width of 1200px */
+@media (min-width: 1200px) {
+ html {
+	 height: 100%;
+ }
+
+ footer {
+	 display: block;
+	 bottom: 0;
+	 right: 0;
+ }
+
+ nav > a {
+	 font-size: 1.8rem;
+ }
+
+ h1 {
+	 font-size: 6rem;
+ }
+
+ h2 {
+	 font-size: 4rem;
+ }
+}

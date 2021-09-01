@@ -1,0 +1,9 @@
+# Write your answers to task1 below.
+# Do NOT remove or modify the question numbers.
+# Each answer should be kept on a single line.
+
+1. ESC>
+2. ESC<
+3. ESCX goto-line ENTER 50 ENTER
+4. CNTRL S chocolate
+5. CNTRL S ENTER ENTER

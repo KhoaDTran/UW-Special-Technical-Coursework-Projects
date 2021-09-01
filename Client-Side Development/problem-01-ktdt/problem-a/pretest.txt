@@ -1,0 +1,308 @@
+FAIL problem-a/problem.spec.js (8.977 s)
+  Used test-driven development
+    ├ù Used Jest to pre-test code, saved in `pretest.txt` (4 ms)
+  Source code is valid
+    ΓêÜ HTML validates without errors (11 ms)
+    ├ù CSS validates without errors (580 ms)
+  Has required HTML
+    ├ù Specifies charset (13 ms)
+    ├ù Includes page title (2 ms)
+    ├ù Includes author metadata (3 ms)
+    ├ù Has a top-level heading (3 ms)
+    ├ù Has an image (3 ms)
+    ├ù Includes a paragraph (1 ms)
+    ├ù Includes a hyperlink in the paragraph (2 ms)
+    ├ù Includes a list (1 ms)
+    ├ù List has at least 3 items (3 ms)
+  Has required CSS
+    ├ù Links in local stylesheet (2 ms)
+    ├ù Body has default font size (2 ms)
+    ├ù Body has default font family (2 ms)
+    ├ù Paragraphs have specified line height (2 ms)
+    ├ù Images have constrained height (1 ms)
+    ├ù Important list item is colored (2 ms)
+
+  ΓùÅ Used test-driven development ΓÇ║ Used Jest to pre-test code, saved in `pretest.txt`
+
+    ENOENT: no such file or directory, open 'C:\Users\tynou\Dropbox\College\Junior\Fall\Info 340\problem-01-ktdt\problem-a/pretest.txt'
+
+      16 |   test('Used Jest to pre-test code, saved in `pretest.txt`', () => {
+      17 |     const path = __dirname + '/pretest.txt'
+    > 18 |     const pretest = fs.readFileSync(path, 'utf-8');
+         |                        ^
+      19 |     expect(pretest).toMatch(/FAIL +problem-a\/problem\.spec\.js/)
+      20 |   })
+      21 | })
+
+      at Object.<anonymous> (problem-a/problem.spec.js:18:24)
+
+  ΓùÅ Source code is valid ΓÇ║ CSS validates without errors
+
+    error: Unexpected empty source (no-empty-source)
+           At line 1, column 1.
+
+      41 |
+      42 |   test('CSS validates without errors', async () => {
+    > 43 |     await expect('problem-a/css/*.css').toHaveNoCssLintErrorsAsync();
+         |                                         ^
+      44 |   })
+      45 | });
+      46 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:43:41)
+
+  ΓùÅ Has required HTML ΓÇ║ Specifies charset
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      53 |
+      54 |   test('Specifies charset', () => {
+    > 55 |     expect($('head > meta[charset]').length).toBe(1); //has 1 tag
+         |                                              ^
+      56 |   })
+      57 |
+      58 |   test('Includes page title', () => {
+
+      at Object.<anonymous> (problem-a/problem.spec.js:55:46)
+
+  ΓùÅ Has required HTML ΓÇ║ Includes page title
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 1
+    Received: 0
+
+      58 |   test('Includes page title', () => {
+      59 |     let title = $('head > title');
+    > 60 |     expect(title.length).toEqual(1); //has 1 tag
+         |                          ^
+      61 |     expect(title.text().length).toBeGreaterThan(0); //has content
+      62 |     expect(title.text()).not.toEqual("My Page Title");
+      63 |   })
+
+      at Object.<anonymous> (problem-a/problem.spec.js:60:26)
+
+  ΓùÅ Has required HTML ΓÇ║ Includes author metadata
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 1
+    Received: 0
+
+      65 |   test('Includes author metadata', () => {
+      66 |     let author = $('head > meta[name="author"]')
+    > 67 |     expect(author.length).toEqual(1); //has 1 tag
+         |                           ^
+      68 |     expect(author.attr('content').length).toBeGreaterThan(0); //has content
+      69 |     expect(author.attr('content')).not.toEqual("your name");
+      70 |   })
+
+      at Object.<anonymous> (problem-a/problem.spec.js:67:27)
+
+  ΓùÅ Has required HTML ΓÇ║ Has a top-level heading
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 1
+    Received: 0
+
+      72 |   test('Has a top-level heading', () => {
+      73 |     let h1 = $('h1');
+    > 74 |     expect(h1.length).toEqual(1); //has 1 tag
+         |                       ^
+      75 |     expect(h1.text()).toBeTruthy(); //contains text
+      76 |   })
+      77 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:74:23)
+
+  ΓùÅ Has required HTML ΓÇ║ Has an image
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1
+    Received:    0
+
+      78 |   test('Has an image', () => {
+      79 |     let img = $('img');
+    > 80 |     expect(img.length).toBeGreaterThanOrEqual(1); //has 1+ tags
+         |                        ^
+      81 |     expect(img.attr('src')).toMatch(/img\/.+/); //image in folder
+      82 |   })
+      83 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:80:24)
+
+  ΓùÅ Has required HTML ΓÇ║ Includes a paragraph
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1
+    Received:    0
+
+      84 |   test('Includes a paragraph', () => {
+      85 |     let p = $('p');
+    > 86 |     expect(p.length).toBeGreaterThanOrEqual(1); //has 1+ tags
+         |                      ^
+      87 |     expect(p.text()).toBeTruthy(); //contains text
+      88 |   })
+      89 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:86:22)
+
+  ΓùÅ Has required HTML ΓÇ║ Includes a hyperlink in the paragraph
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1
+    Received:    0
+
+      90 |   test('Includes a hyperlink in the paragraph', () => {
+      91 |     let a = $('p a');
+    > 92 |     expect(a.length).toBeGreaterThanOrEqual(1); //has 1+ tags
+         |                      ^
+      93 |     expect(a.attr('href')).toMatch(/https?:\/\/*/); //links to external page
+      94 |   })
+      95 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:92:22)
+
+  ΓùÅ Has required HTML ΓÇ║ Includes a list
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 1
+    Received:    0
+
+       95 |
+       96 |   test('Includes a list', () => {
+    >  97 |     expect( $('ul, ol').length ).toBeGreaterThanOrEqual(1); //has 1+ tag
+          |                                  ^
+       98 |   })
+       99 |
+      100 |   test('List has at least 3 items', () => {
+
+      at Object.<anonymous> (problem-a/problem.spec.js:97:34)
+
+  ΓùÅ Has required HTML ΓÇ║ List has at least 3 items
+
+    expect(received).toBeGreaterThanOrEqual(expected)
+
+    Expected: >= 3
+    Received:    0
+
+      100 |   test('List has at least 3 items', () => {
+      101 |     let li = $('ul, ol').first().children('li');
+    > 102 |     expect( li.length ).toBeGreaterThanOrEqual(3); //has 3 tags
+          |                         ^
+      103 |
+      104 |     //no empty items!
+      105 |     let empty = li.filter(function(i,elem) { return $(this).text().length == 0; })
+
+      at Object.<anonymous> (problem-a/problem.spec.js:102:25)
+
+  ΓùÅ Has required CSS ΓÇ║ Links in local stylesheet
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: 1
+    Received: 0
+
+      119 |   test('Links in local stylesheet', () => {
+      120 |     let link = $('head > link');
+    > 121 |     expect( link.length ).toEqual(1);
+          |                           ^
+      122 |     expect( link.attr('href')).toMatch('css/style.css');
+      123 |   })
+      124 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:121:27)
+
+  ΓùÅ Has required CSS ΓÇ║ Body has default font size
+
+    expect(received).toEqual(expected) // deep equality
+
+    Expected: "16px"
+    Received: undefined
+
+      124 |
+      125 |   test('Body has default font size', () => {
+    > 126 |     expect( $('body').css('font-size') ).toEqual('16px');
+          |                                          ^
+      127 |   })
+      128 |
+      129 |   test('Body has default font family', () => {
+
+      at Object.<anonymous> (problem-a/problem.spec.js:126:42)
+
+  ΓùÅ Has required CSS ΓÇ║ Body has default font family
+
+    TypeError: Cannot read property 'replace' of undefined
+
+      128 |
+      129 |   test('Body has default font family', () => {
+    > 130 |     let fontFamilySingleQuotes = ($('body').css('font-family')).replace(/"/g, '\'');
+          |                                  ^
+      131 |     expect(fontFamilySingleQuotes).toMatch(/'Helvetica Neue', *'?Helvetica'?, *'?Arial'?, *sans-serif/);
+      132 |   })
+      133 |
+
+      at Object.<anonymous> (problem-a/problem.spec.js:130:34)
+
+  ΓùÅ Has required CSS ΓÇ║ Paragraphs have specified line height
+
+    TypeError: Cannot read property 'attribs' of undefined
+
+      134 |   test('Paragraphs have specified line height', () => {
+      135 |     let p = $('p')
+    > 136 |     expect(p.css('line-height') ).toEqual('1.5');
+          |              ^
+      137 |     expect(p.attr('id')).toBe(undefined); //shouldn't have id
+      138 |     expect(p.attr('class')).toBe(undefined); //shouldn't have class
+      139 |   })
+
+      at getCss (node_modules/cheerio/lib/api/css.js:69:25)
+      at initialize.css (node_modules/cheerio/lib/api/css.js:25:12)
+      at Object.<anonymous> (problem-a/problem.spec.js:136:14)
+
+  ΓùÅ Has required CSS ΓÇ║ Images have constrained height
+
+    TypeError: Cannot read property 'attribs' of undefined
+
+      140 |
+      141 |   test('Images have constrained height', () => {
+    > 142 |     expect($('img').css('max-height')).toEqual('400px');
+          |                     ^
+      143 |   })
+      144 |
+      145 |   test('Important list item is colored', () => {
+
+      at getCss (node_modules/cheerio/lib/api/css.js:69:25)
+      at initialize.css (node_modules/cheerio/lib/api/css.js:25:12)
+      at Object.<anonymous> (problem-a/problem.spec.js:142:21)
+
+  ΓùÅ Has required CSS ΓÇ║ Important list item is colored
+
+    expect(received).toBe(expected) // Object.is equality
+
+    Expected: 1
+    Received: 0
+
+      145 |   test('Important list item is colored', () => {
+      146 |     let li = $('li[class]')
+    > 147 |     expect(li.length).toBe(1); //only one item has class
+          |                       ^
+      148 |     expect(li.css('color')).toBeDefined(); //that item has a color
+      149 |   });
+      150 | })
+
+      at Object.<anonymous> (problem-a/problem.spec.js:147:23)
+
+Test Suites: 1 failed, 1 total
+Tests:       17 failed, 1 passed, 18 total
+Snapshots:   0 total
+Time:        11.326 s
+Ran all test suites matching /problem-a/i.

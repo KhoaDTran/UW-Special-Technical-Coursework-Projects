@@ -1,0 +1,26 @@
+Simple Protein-Coding Gene
+ATGCCACTATGGTAG
+Upper and Lowercase Protein
+ATgCCAACATGgATGCCcGATAtGGATTgA
+Valid Gene
+ATGCGACCCTAGTAG
+Invalid Gene
+ATGCGACCCTAGTAGGG
+Another Protein-Coding Gene
+ATGACCGACTCAGTATAA
+Yet-Another Protein-Coding Gene
+ATGATCGACTACGATTAG
+Yet-Again-Another Protein-Coding Gene
+ATGATTGGGCCCGCTTAGTAGTGA
+Invalid Protein-Coding Gene
+ATGACCGACTCAGTAAAT
+Another Invalid Protein-Coding Gene
+ATGACCGACTAG
+Yet-Another Invalid Protein-Coding Gene
+AGGATTGGGCCCGCTTAGTAGTGA
+Feline-Encoding DNA
+CATCATCATCATCATCATCATCATCATCAT
+Palindrome DNA
+ACTTCA
+First And Last DNA
+TAGACGTACCTTAG
